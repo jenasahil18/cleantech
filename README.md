@@ -1,4 +1,4 @@
-# Cleantech Cleaning Services 🌿
+# Clean Tech Services - Best Cleaning Service Provider In Surat.
 
 A responsive and modern cleaning service website built using **HTML, CSS, and JavaScript**.  
 The website showcases Cleantech’s wide range of professional cleaning solutions — from home and tank cleaning to sofa, carpet, and bathroom cleaning services.
