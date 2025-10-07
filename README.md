@@ -1,4 +1,4 @@
-#Cleantech Cleaning Services 🌿
+# Cleantech Cleaning Services 🌿
 
 A responsive and modern cleaning service website built using **HTML, CSS, and JavaScript**.  
 The website showcases Cleantech’s wide range of professional cleaning solutions — from home and tank cleaning to sofa, carpet, and bathroom cleaning services.
@@ -50,7 +50,7 @@ cleantech-website/
 │ └── (all image files)
 └── README.md
 
-##👨‍💻 Developer
+## 👨‍💻 Developer
 Developed by: Sahil Jena
 Role: Front-End Developer
 Technologies: HTML, CSS, JavaScript
