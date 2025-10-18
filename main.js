@@ -69,6 +69,12 @@ setInterval(() => moveSlide(1), 3000);
                 }
             });
             
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                const btn = document.querySelector('.submit-btn');
+                btn.classList.add('loading');
+                btn.disabled = true;
+            });
+
             // Toggle current accordion
             button.classList.toggle('active');
             content.classList.toggle('active');
