@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJdZ812fR7N55vN3R4/GfD7S8S/1v/hU8oF5tBf9j8k4bS9Gg8v1fR5q8z5w..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJdZ812fR7N55vN3R4/GfD7S8S/1v/hU8oF5tBf9j8k4bS9Gg8v1fR5q8z5w..." />
     <title>Clean Tech Services - Professional Cleaning Services</title>
 </head>
 <body>
@@ -13,7 +13,7 @@
         <nav class="container">
             <div class="logo">
                 <div class="logo-icon">
-                    <img src="logo_header.png">
+                    <img src="logo_header.png" alt="Clean Tech Services Logo">
                 </div>
                 <span>CLEAN TECH SERVICES</span>
             </div>
@@ -31,18 +31,16 @@
 
 
     <!-- Breadcrumb -->
-    <div class="breadcrumb">
-        <h2>Contact Us</h2>
-        <div class="breadcrumb-links">
-            <a href="index.html">Home</a>
-            <span>/</span>
-            <span>Contact Us</span>
+    <div class="about-section" style="padding: 20px 0;">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / Contact Us
         </div>
     </div>
 
     <!-- Contact Section -->
     <section class="contact-section">
         <div class="container">
+
             <div class="contact-header">
                 <h1>Get in <span style="font-style: italic;">Touch With Us Today</span></h1>
             </div>
@@ -78,9 +76,10 @@
                             <div class="form-group">
                                 <input type="tel" name="contact_no" placeholder="Contact No." required>
                             </div>
+
                             <div class="form-group">
-                                <select name="service" required>
-                                    <option value="">Services</option>
+                                <select id="service" name="sevice" aria-label="Select Services" required>
+                                    <option value="" disabled selected>Select services</option>
                                     <option value="Water Tank Cleaning">Water Tank Cleaning</option>
                                     <option value="Sofa-Carpet Cleaning">Sofa-Carpet Cleaning</option>
                                     <option value="Bathroom Cleaning">Bathroom Cleaning</option>
@@ -100,6 +99,7 @@
                         <button type="submit" class="submit-btn">Submit</button>
                     </form>
                 </div>
+            </div>
             </div>
 
             <!-- Contact Info Cards -->
@@ -130,7 +130,6 @@
             <div class="map-section">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.6534877195844!2d72.9643172!3d21.2736606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04696d8a04d95%3A0x83a8256a14d3d787!2sSignet%20Mall!5e0!3m2!1sen!2sin!4v1234567890" allowfullscreen="" loading="lazy"></iframe>
             </div>
-        </div>
     </section>
 
 

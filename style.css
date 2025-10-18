@@ -81,7 +81,7 @@
             border-radius: 25px;
             cursor: pointer;
             font-size: 14px;
-            transition: background 0.3s;
+            transition: all 0.3s;
         }
 
         .btn-primary:hover {
@@ -89,7 +89,24 @@
             color: #000080;
         }
 
-        /* Hero Section */
+        /*BREADCRUMB (About, Services, Products, Contact Pages)*/
+        .about-content {
+            text-align: center;
+            background-color: #000080;
+            color: white;
+            padding: 10px 20px;
+            display: inline-block;
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Hero Section (Home Page) */
         .hero {
             background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
             padding: 40px 0;
@@ -138,7 +155,7 @@
         }
 
 
-        /* Stats Bar */
+        /* Stats Bar (home Page) */
         .stats-bar {
             background: #1a0b5e;
             color: white;
@@ -167,7 +184,7 @@
             opacity: 0.9;
         }
 
-        /* About Section */
+        /* About Section (About Us Page) */
         .about-section {
             max-width: 1200px;
             margin: 0 auto;
@@ -176,19 +193,13 @@
         }
 
         .breadcrumb {
-            text-align: center; 
+            text-align: center;
             background-color: #000080;
             color: white;
             padding: 10px 20px;
             display: inline-block;
             margin-bottom: 30px;
             font-size: 16px;
-            font-weight: 500;
-        }
-
-        .breadcrumb a {
-            color: white;
-            text-decoration: none;
         }
 
         /*Heading Style*/
@@ -237,7 +248,7 @@
             margin-bottom: 25px;
         }
 
-        /* Why Choose Section */
+        /* Why Choose Section (About & Home Page)*/
         .why-choose {
             background: #f9fafb;
             padding: 80px 0;
@@ -246,20 +257,6 @@
         .why-choose-content {
             text-align: center;
             margin-bottom: 50px;
-        }
-
-        /* CHANGED: h1 styling to match Framework B */
-        .why-choose-content h1 {
-            text-align: center;
-            font-size: 34px; 
-            font-weight: 500; /* ADDED: Normal weight for "Why" */
-            margin-bottom: 50px; 
-            color: #292929;
-        }
-
-        .why-choose-content h1 em {
-            font-style: italic;
-            font-weight: 600;
         }
 
         /* Features Grid */
@@ -304,7 +301,7 @@
             line-height: 1.6;
         }
 
-        /* Services Section */
+        /* Services Section (Home & Services Page) */
         .services {
             padding: 80px 0;
         }
@@ -365,199 +362,7 @@
             margin-top: 40px;
         }
 
-        /* Showcase Section */
-        .showcase {
-            background: #f9fafb;
-            padding: 80px 0;
-        }
-
-        .showcase-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .showcase-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .showcase-item {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        .showcase-image {
-            width: 100%;
-            height: 250px;
-            background: #ddd;
-        }
-
-        .showcase-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Testimonials */
-        .testimonials {
-            padding: 80px 0;
-        }
-
-        .testimonials-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
-
-        .testimonial-card.featured {
-            background: #1a0b5e;
-            color: white;
-        }
-
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #ddd;
-        }
-
-        .author-info h4 {
-            margin-bottom: 5px;
-        }
-
-        .author-info p {
-            font-size: 12px;
-            opacity: 0.8;
-        }
-
-        .stars {
-            color: #ffc107;
-            margin-bottom: 15px;
-        }
-
-        /* Products Section */
-        .products {
-            background: #f9fafb;
-            padding: 80px 0;
-        }
-
-        .products-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-
-        .products-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 30px;
-            margin-bottom: 30px;
-        }
-
-        .product-card {
-            background: white;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            padding: 20px;
-        }
-
-        .product-image {
-            width: 100%;
-            height: 150px;
-            background: #f0f0f0;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .product-name {
-            font-size: 16px;
-            font-weight: 600;
-            color: #1d0d5e;
-            margin-bottom: 10px;
-        }
-
-        .product-description {
-            font-size: 13px;
-            color: #666;
-        }
-
-        /* Breadcrumb */
-        .breadcrumb {
-            background-color: #000080;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        .breadcrumb-links {
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        .breadcrumb-links a {
-            color: white;
-            text-decoration: none;
-        }
-
-        .breadcrumb-links span {
-            margin: 0 10px;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f8f9fa;
-            color: #333;
-        }
-
-        .breadcrumb-section {
-            background: #000080;
-            padding: 15px 0;
-            text-align: center;
-        }
-
-        .breadcrumb {
-            display: inline-block;
-            background: #000080;
-            color: white;
-            padding: 10px 30px;
-            border-radius: 5px;
-            font-size: 14px;
-            font-weight: 600;
-        }
-
-        .breadcrumb a {
-            color: white;
-            text-decoration: none;
-        }
-
+        /* ====== SERVICES PAGE - DETAILED VIEW ====== */
         .page-title {
             text-align: center;
             padding: 60px 20px 40px;
@@ -598,7 +403,7 @@
         .service-box:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(26,11,94,0.15);
-            border-color: white;
+            border-color: #1a0b5e;
         }
 
         .icon-wrapper {
@@ -630,6 +435,7 @@
             margin-bottom: 25px;
         }
 
+        /* Accordion Styles (Services Page) */
         .accordion-btn {
             width: 100%;
             background: #1a0b5e;
@@ -671,7 +477,6 @@
             transition: max-height 0.4s ease;
             background: #f5f7fa;
             border-radius: 0 0 20px 20px;
-            margin-bottom: 12px;
         }
 
         .accordion-content.active {
@@ -703,95 +508,104 @@
             line-height: 1.6;
         }
 
-        @media (max-width: 768px) {
-            .services-container {
-                grid-template-columns: 1fr;
-            }
-
-            .page-title h1 {
-                font-size: 32px;
-            }
-
-            .service-box {
-                padding: 30px 20px;
-            }
+        /* PRODUCTS SECTION (Home & Products Pages) */
+        .products {
+            background: #f9fafb;
+            padding: 80px 0;
         }
 
+        .products-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
 
-        /* Container for the whole section */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 150px;
+            background: #f0f0f0;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1a0b5e;
+            margin-bottom: 10px;
+        }
+
+        .product-description {
+            font-size: 13px;
+            color: #666;
+        }
+
+        /* ====== PRODUCT DETAIL PAGE ====== */
         .product-header-section {
-            text-align: center; /* Centers all content inside */
-            padding: 50px 20px; /* Add some vertical padding */
-            font-family: Arial, sans-serif; /* Use a common font, adjust if needed */
+            text-align: center;
+            padding: 50px 20px;
         }
 
-        /* Style for the small blue tag/breadcrumb */
         .tag-breadcrumb {
-            display: inline-block; /* Makes the background only wrap the text */
-            background-color: #00008b; /* Dark blue color */
+            display: inline-block;
+            background-color: #000080;
             color: white;
             font-size: 14px;
             font-weight: 600;
-            padding: 8px 15px; /* Padding inside the blue box */
-            margin-bottom: 20px; /* Space below the blue box */
-            border-radius: 2px; /* Slight corner rounding (optional) */
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            border-radius: 2px;
             letter-spacing: 0.5px;
         }
 
-        /* Style for the main heading */
         .product-main-heading {
-            font-size: 48px; /* Large font size for the heading */
-            color: #333; /* Dark gray/black for the text */
-            font-weight: bold; /* Make "Shop Our" bold (default for h2) */
-            line-height: 1.2; /* Spacing between lines */
-            margin: 0; /* Remove default margin */
+            font-size: 48px;
+            color: #333;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 0;
         }
 
-        /* Style for the italic/bold part ("Latest Products Today") */
         .product-main-heading .highlight-text {
-            font-style: italic; /* Makes it italic */
-            font-weight: 900; /* Makes it extra bold/black */
-            color: #222; /* Slightly darker color for emphasis */
+            font-style: italic;
+            font-weight: 900;
+            color: #222;
         }
 
-        /* Media Query for responsiveness on smaller screens */
-        @media (max-width: 600px) {
-            .product-main-heading {
-                font-size: 36px;
-            }
-        }
-
-        /* Main container for the whole section */
         .product-detail-container {
             display: flex;
-            max-width: 1200px; /* Adjust max-width as needed */
+            max-width: 1200px;
             margin: 40px auto;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow around the whole box */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
-        /* --- LEFT COLUMN: Visuals --- */
         .product-visual-column {
-            flex: 1; /* Takes up one part of the space (e.g., 50%) */
-            background-color: #f7f7f7; /* Light gray background */
+            flex: 1;
+            background-color: #f7f7f7;
             padding: 30px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            position: relative; /* Needed for positioning the badge */
-        }
-
-        .handwritten-text {
-            /* You would need to link a handwritten font here, e.g., using @font-face or Google Fonts */
-            font-family: 'Handwriting Font', cursive; /* Placeholder font */
-            font-size: 60px !important; 
-            color: #e69d7b; /* Orange/peach color */
-            font-weight: bold;
-        }
-
-        /* Image Placeholder (for positioning the badge) */
-        .image-placeholder {
             position: relative;
-            max-width: 100%;
         }
 
         .product-main-image {
@@ -800,9 +614,8 @@
             height: auto;
         }
 
-        /* --- RIGHT COLUMN: Info --- */
         .product-info-column {
-            flex: 1; /* Takes up the other part of the space (e.g., 50%) */
+            flex: 1;
             padding: 40px;
             text-align: left;
         }
@@ -814,16 +627,6 @@
             margin-bottom: 20px;
         }
 
-        .subtitle-line {
-            display: block; /* Forces each line onto its own line */
-            font-size: 24px;
-            font-weight: 700;
-        }
-
-        .maintenance-free {
-            color: #00008b; /* Dark blue for emphasis */
-        }
-
         .product-model-title {
             font-size: 18px;
             color: #555;
@@ -832,19 +635,9 @@
             margin-bottom: 20px;
         }
 
-        .product-description {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            /* Optional: Justify text for a block appearance */
-            /* text-align: justify; */
-        }
-
-        /* Buy Now Button */
         .buy-now-button {
             display: inline-block;
-            background-color: #00008b; /* Dark blue color */
+            background-color: #000080;
             color: white;
             padding: 12px 25px;
             text-decoration: none;
@@ -856,27 +649,66 @@
         }
 
         .buy-now-button:hover {
-            background-color: #0056b3; /* Slightly lighter blue on hover */
+            background-color: #0056b3;
         }
 
-        /* --- Responsive Adjustments --- */
-        @media (max-width: 900px) {
-            .product-detail-container {
-                flex-direction: column; /* Stacks the columns vertically on smaller screens */
-            }
-            
-            .product-visual-column, .product-info-column {
-                padding: 30px;
-            }
-
-            .bacteria-badge {
-                transform: translate(0, -50%); /* Center the badge on smaller screens */
-                left: 50%;
-                top: 30%;
-            }
+        /* TESTIMONIALS SECTION (Home Page)*/
+        .testimonials {
+            padding: 80px 0;
         }
 
-        /* Contact Section */
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .testimonial-card.featured {
+            background: #1a0b5e;
+            color: white;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .author-avatar {
+            width: 50px;
+            height: 50px;border-radius: 50%;
+            background: #ddd;
+        }
+
+        .author-info h4 {
+            margin-bottom: 5px;
+        }
+
+        .author-info p {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+
+        .stars {
+            color: #ffc107;
+            margin-bottom: 15px;
+        }
+
+
+        /* Contact Section (Contact Page)*/
         .contact-section {
             padding: 80px 0;
         }
