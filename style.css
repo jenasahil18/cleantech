@@ -362,22 +362,81 @@
             margin-top: 40px;
         }
 
-        /* ====== SERVICES PAGE - DETAILED VIEW ====== */
-        .page-title {
+        /* ====== ABOUT PAGE - HEADER SECTION (Breadcrumb & Title) ====== */
+        .about-section {
             text-align: center;
-            padding: 60px 20px 40px;
+            padding: 50px 20px;
         }
 
-        .page-title h1 {
-            font-size: 42px;
+        .about-section .breadcrumb {
+            display: inline-block;
+            background-color: #000080;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .about-section .breadcrumb a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .about-section .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .about-section h1 {
+            font-size: 48px;
             color: #333;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 0;
         }
 
-        .page-title .highlight {
+        .about-section h1 em {
             font-style: italic;
-            font-weight: 700;
+            font-weight: 900;
+            color: #222;
         }
 
+
+        /* ====== SERVICES PAGE - HEADER SECTION (Breadcrumb & Title) ====== */
+        .services-header-section {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .services-header-section .tag-breadcrumb {
+            display: inline-block;
+            background-color: #000080;
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 8px 15px;
+            margin-bottom: 20px;
+            border-radius: 2px;
+            letter-spacing: 0.5px;
+        }
+
+        .services-main-heading {
+            font-size: 45px;
+            color: #333;
+            font-weight: bold;
+            line-height: 1.2;
+            margin: 0;
+        }
+
+        .services-main-heading .highlight-text {
+            font-style: italic;
+            font-weight: 900;
+            color: #222;
+        }
+
+        /* ====== SERVICES PAGE - DETAILED VIEW ====== */
         .services-wrapper {
             max-width: 1400px;
             margin: 0 auto;
