@@ -95,9 +95,11 @@ setInterval(() => moveSlide(1), 3000);
             });
         }, observerOptions);
 
-        document.querySelectorAll('.service-box').forEach((box) => {
-            box.style.opacity = '0';
-            box.style.transform = 'translateY(30px)';
-            box.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(box);
+        document.querySelectorAll('.feature-card, .service-card, .testimonial-card, .product-card').forEach((card, index) => {
+            if (index !== 0) { // skip the first one
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+            }
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
         });

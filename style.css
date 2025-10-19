@@ -217,6 +217,7 @@
         }
 
         .content-wrapper {
+            margin-top: 60px;
             display: flex;
             gap: 40px;
             align-items: center;
@@ -248,10 +249,13 @@
             margin-bottom: 25px;
         }
 
-        /* Why Choose Section (About & Home Page)*/
+        /* Why Choose Section */
         .why-choose {
+            position: relative;
             background: #f9fafb;
+            z-index: 5;
             padding: 80px 0;
+            margin-top: 60px; /* add breathing room below previous section */
         }
 
         .why-choose-content {
@@ -265,16 +269,27 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-top: 40px;
+            overflow: visible; /* keeps all cards visible */
         }
 
         /* Individual Feature Card */
         .feature-card {
-            background:white;
+            background: white;
             padding: 30px;
             border-radius: 15px;
             text-align: center;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
             transition: transform 0.3s;
+            position: relative;
+            z-index: 10;
+        }
+
+        .feature-card:first-child {
+            position: relative;
+            z-index: 1;
+            visibility: visible;
+            opacity: 1;
+            transform: none;
         }
 
         .feature-card:hover {
