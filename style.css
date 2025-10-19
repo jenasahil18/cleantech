@@ -157,8 +157,8 @@
 
         /* Stats Bar (home Page) */
         .stats-bar {
-            background: #1a0b5e;
-            color: white;
+            background: white;
+            color: rgb(7, 7, 91);
             padding: 40px 0;
             margin-top: -30px;
         }
@@ -183,6 +183,80 @@
             font-size: 14px;
             opacity: 0.9;
         }
+
+         /* About Section */
+        .about {
+            padding: 80px 0;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            background-color: #fefefe;
+        }
+
+        /* ====== TEXT CONTAINER ====== */
+        .text-container {
+            flex: 1;                      /* Take 50% space */
+            max-width: 50%;
+        }
+
+        .text-container p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #333;
+            text-align: justify;
+            margin-bottom: 25px;
+        }
+
+        .section-subtitle {
+            color: #1b105d;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+            word-spacing: 4px;
+            letter-spacing: 3px;
+        }
+
+        .section-title {
+            font-size: 36px;
+            color: #1a0b5e;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 50px;
+            font-weight: 500;
+            color: #292929;
+        }
+
+        h1 em {
+            font-style: italic;
+            font-weight: 600;
+        }
+
+        .hero-images { width: 100%; }
+        .hero-img {
+            display: block;
+            width: 100%;
+            height: 400px;           /* adjust as needed */
+            object-fit: cover;       /* keeps aspect & crops nicely */
+            border-radius: 10px;     /* optional */
+        }
+
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+
 
         /* About Section (About Us Page) */
         .about-section {
