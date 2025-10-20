@@ -156,32 +156,55 @@
 
 
         /* Stats Bar (home Page) */
-        .stats-bar {
-            background: #1a0b5e;
-            color: white;
-            padding: 40px 0;
-            margin-top: -30px;
-        }
-
         .stats-container {
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
+            gap: 60px;
+            flex-wrap: wrap;
+            max-width: 1400px;
+            margin: 0 auto;
         }
 
         .stat-item {
-            text-align: center;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .icon-circle {
+            width: 80px;
+            height: 80px;
+            background: #000080;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon-circle img {
+            width: 40px;
+            height: 40px;
+            filter: brightness(0) invert(1);
+        }
+
+        .stat-content {
+            text-align: left;
         }
 
         .stat-number {
-            font-size: 36px;
+            font-size: 48px;
             font-weight: bold;
-            margin-bottom: 5px;
+            color: #000080;
+            line-height: 1;
+            margin-bottom: 8px;
         }
 
         .stat-label {
-            font-size: 14px;
-            opacity: 0.9;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
         }
 
         /* About Section (About Us Page) */
@@ -1114,89 +1137,85 @@
             opacity: 0.8;
         }
 
-         /* ====== RESPONSIVE DESIGN (FIXED) ====== */
-        @media (max-width: 1024px) {
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+        
+        /* ====== RESPONSIVE DESIGN (FIXED) ====== */
+    @media (max-width: 1024px) {
+        .features-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets/laptops */
+        }
+    }
+
+    @media (max-width: 768px) {
+       
+        
+        /* ABOUT SECTION RESPONSIVE */
+        .content-wrapper {
+            flex-direction: column;
+        }
+        .image-container,
+        .text-container {
+            max-width: 100%;
         }
 
-         @media (max-width: 768px) {
-            /* ABOUT SECTION RESPONSIVE */
-            .content-wrapper {
-                flex-direction: column;
-            }
-
-            .image-container,
-            .text-container {
-                max-width: 100%;
-            }
-
-            /* WHY CHOOSE RESPONSIVE */
-            .features-grid {
-                grid-template-columns: 1fr;
-            }
-
-            /* FOOTER RESPONSIVE */
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            /* NAVIGATION RESPONSIVE */
-            .nav-links {
-                display: none;
-            }
-
-            /* TYPOGRAPHY RESPONSIVE */
-            h1 {
-                font-size: 28px;
-            }
-
-            .text-container p {
-                font-size: 16px;
-            }
-
-            .feature-card h3 {
-                font-size: 18px;
-            }
-
-            .feature-card p {
-                font-size: 14px;
-            }
-
-            /* PADDING ADJUSTMENTS */
-            .about-section {
-                padding: 40px 20px 20px;
-            }
-
-            .why-choose {
-                padding: 60px 0;
-            }
+        /* GENERAL GRID RESPONSIVE (Single Column) */
+        .features-grid,
+        .services-grid,
+        .showcase-grid,
+        .testimonials-grid,
+        .products-grid,
+        .hero-content, /* New addition from the second block */
+        .about-content { /* New addition from the second block */
+            grid-template-columns: 1fr;
         }
 
-        @media (max-width: 768px) {
-            .hero-content,
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .features-grid,
-            .services-grid,
-            .showcase-grid,
-            .testimonials-grid,
-            .products-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero-text h1 {
-                font-size: 32px;
-            }
+        /* FOOTER RESPONSIVE */
+        .footer-content {
+            grid-template-columns: 1fr;
         }
+
+        /* NAVIGATION RESPONSIVE */
+        .nav-links {
+            display: none;
+        }
+
+        /* TYPOGRAPHY RESPONSIVE */
+        h1, .hero-text h1 { /* Combined h1 styles */
+            font-size: 32px; /* Using 32px from the second block as it's typically larger */
+        }
+        .text-container p {
+            font-size: 16px;
+        }
+        .feature-card h3 {
+            font-size: 18px;
+        }
+        .feature-card p {
+            font-size: 14px;
+        }
+
+        /* PADDING ADJUSTMENTS */
+        .about-section {
+            padding: 40px 20px 20px;
+        }
+        .why-choose {
+            padding: 60px 0;
+        }
+
+        /* Stats Counter RESPONSIVE */ 
+        .stats-container {
+            gap: 40px;
+        }
+
+        .stat-number {
+            font-size: 36px;
+        }
+
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+        }
+
+        .icon-circle img {
+            width: 30px;
+            height: 30px;
+        } 
+    }
