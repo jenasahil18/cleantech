@@ -114,9 +114,8 @@
             
             <div class="about-content">
                 <div>
-                    <p>Cleantech, established in 2017, is a trusted provider of professional cleaning and maintenance services. We specialize in delivering high-quality solutions for residential, commercial, and industrial spaces, ensuring a safe and hygienic environment.</p>
-                    <p>Our team of trained experts is committed to using modern techniques and eco-friendly practices, making us the preferred choice for reliable cleaning services. With years of experience, Cleantech has built a strong reputation for excellence, consistency, and customer satisfaction, helping clients maintain spotless spaces with ease and confidence.</p>
-                    <button class="btn-primary">Explore More</button>
+                    <p>Cleantech, established in 2017, is a trusted provider of professional cleaning and maintenance services. We specialize in delivering high-quality solutions for residential, commercial, and industrial spaces, ensuring a safe and hygienic environment. Our team of trained experts is committed to using modern techniques and eco-friendly practices, making us the preferred choice for reliable cleaning services. With years of experience, Cleantech has built a strong reputation for excellence, consistency, and customer satisfaction, helping clients maintain spotless spaces with ease and confidence.</p>
+                    <button class="btn-primary">Read More</button>
                 </div>
                 <div class="about-image-container">
                     <img src="MAIN_HOME/section_2/IMG_7564.JPG" alt="CleanTech Team" class="about-single-image">
@@ -168,26 +167,73 @@
         </div>
     </section>
 
-    <!-- Showcase Section -->
-    <section class="showcase">
-        <div class="container">
-            <div class="showcase-header">
-                <p class="section-subtitle">OUR WORK</p>
-                <h2 class="section-title">RECENT WORK SHOWCASE</h2>
-            </div>
-            <div class="showcase-grid">
-                <div class="showcase-item">
-                    <div class="showcase-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                </div>
-                <div class="showcase-item">
-                    <div class="showcase-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                </div>
-                <div class="showcase-item">
-                    <div class="showcase-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                </div>
-            </div>
+<!-- Showcase Section -->
+<section class="showcase">
+    <div class="container">
+        <div class="showcase-header">
+            <p class="section-subtitle">OUR WORK</p>
+            <h2 class="section-title">Recent <em>Work Showcase</em></h2>
         </div>
-    </section>
+        
+        <div class="slider-container">
+            <button class="slider-btn prev-btn" onclick="moveSlide(-1)">❮</button>
+            
+            <div class="slider-wrapper">
+                <div class="slides-track">
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.1.jpeg" alt="Work 1">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.2.png" alt="Work 2">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.3.png" alt="Work 3">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.4.png" alt="Work 4">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.5.jpg" alt="Work 5">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.6.jpg" alt="Work 6">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.7.jpg" alt="Work 7">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.8.jpg" alt="Work 8">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.9.jpg" alt="Work 9">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.10.jpg" alt="Work 10">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.11.jpg" alt="Work 11">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.12.jpg" alt="Work 12">
+                    </div>
+                    <div class="slide-item">
+                        <img src="MAIN_HOME/section_4/4.13.jpg" alt="Work 13">
+                    </div>
+                </div>
+            </div>
+            
+            <button class="slider-btn next-btn" onclick="moveSlide(1)">❯</button>
+        </div>
+        
+        <div class="slider-dots">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </div>
+</section>
 
     <!-- Testimonials -->
     <section class="testimonials">
@@ -333,4 +379,3 @@
     </footer>
     <script src="main.js"></script>
 </body>
-</html>
