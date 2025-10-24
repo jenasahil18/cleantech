@@ -235,50 +235,108 @@
     </div>
 </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="testimonials-header">
-                <p class="section-subtitle">HAPPY CUSTOMERS</p>
-                <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-author">
-                        <div class="author-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
-                        <div class="author-info">
-                            <h4>Chandu Shetty</h4>
-                            <p>Homeowner</p>
-                        </div>
-                    </div>
-                    <div class="stars">★★★★★</div>
-                    <p>Excellent service! The team was professional, punctual, and thorough. My home has never looked better. Highly recommend CleanTech!</p>
-                </div>
-                <div class="testimonial-card featured">
-                    <div class="testimonial-author">
-                        <div class="author-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
-                        <div class="author-info">
-                            <h4>Rohit Sharma</h4>
-                            <p>Business Owner</p>
-                        </div>
-                    </div>
-                    <div class="stars">★★★★★</div>
-                    <p>We've been using CleanTech for our office cleaning for over a year now. Their consistency and attention to detail are unmatched. Great value!</p>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-author">
-                        <div class="author-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
-                        <div class="author-info">
-                            <h4>Ashutosh Singh</h4>
-                            <p>Apartment Resident</p>
-                        </div>
-                    </div>
-                    <div class="stars">★★★★★</div>
-                    <p>Amazing experience! The cleaning crew was friendly and efficient. They transformed my apartment. Will definitely use their services again.</p>
-                </div>
-            </div>
+<!-- Testimonials -->
+<section class="testimonials">
+    <div class="container">
+        <div class="testimonials-header">
+            <p class="section-subtitle">HAPPY CUSTOMERS</p>
+            <h2 class="section-title">WHAT OUR CUSTOMERS SAY</h2>
         </div>
-    </section>
+        
+        <div class="testimonial-slider-container">
+            <button class="testimonial-slider-btn prev" onclick="moveTestimonial(-1)">❮</button>
+            
+            <div class="testimonial-slider-wrapper">
+                <div class="testimonial-slides-track">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: #667eea;"></div>
+                                <div class="author-info">
+                                    <h4>Chandu Shetty</h4>
+                                    <p>Homeowner</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p>Excellent service! The team was professional, punctual, and thorough. My home has never looked better. Highly recommend CleanTech!</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card featured">
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: #f5576c;"></div>
+                                <div class="author-info">
+                                    <h4>Rohit Sharma</h4>
+                                    <p>Business Owner</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p>We've been using CleanTech for our office cleaning for over a year now. Their consistency and attention to detail are unmatched. Great value!</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: #4facfe;"></div>
+                                <div class="author-info">
+                                    <h4>Ashutosh Singh</h4>
+                                    <p>Apartment Resident</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p>Amazing experience! The cleaning crew was friendly and efficient. They transformed my apartment. Will definitely use their services again.</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: #43e97b;"></div>
+                                <div class="author-info">
+                                    <h4>Priya Patel</h4>
+                                    <p>Office Manager</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p>Outstanding work! CleanTech team is reliable and trustworthy. They pay attention to every detail. Our office has never been cleaner!</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-author">
+                                <div class="author-avatar" style="background: #fa709a;"></div>
+                                <div class="author-info">
+                                    <h4>Rajesh Kumar</h4>
+                                    <p>Property Owner</p>
+                                </div>
+                            </div>
+                            <div class="stars">★★★★★</div>
+                            <p>Best cleaning service in town! Professional staff, excellent results, and affordable pricing. I recommend CleanTech to all my friends and family.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="testimonial-slider-btn next" onclick="moveTestimonial(1)">❯</button>
+        </div>
+        
+        <div class="testimonial-dots">
+            <span class="testimonial-dot active" onclick="currentTestimonial(0)"></span>
+            <span class="testimonial-dot" onclick="currentTestimonial(1)"></span>
+            <span class="testimonial-dot" onclick="currentTestimonial(2)"></span>
+            <span class="testimonial-dot" onclick="currentTestimonial(3)"></span>
+            <span class="testimonial-dot" onclick="currentTestimonial(4)"></span>
+        </div>
+    </div>
+</section>
 
     <!-- Products Section -->
     <section class="products">

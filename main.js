@@ -144,3 +144,42 @@ function updateSlider() {
 
 setInterval(() => moveSlide(1), 5000);
 window.addEventListener('resize', updateSlider);
+
+
+    let testimonialIndex = 0;
+    const testimonialsToShow = 3;
+    const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+    const totalTestimonials = testimonialSlides.length;
+    const maxTestimonialIndex = Math.ceil(totalTestimonials / testimonialsToShow) - 1;
+
+    function moveTestimonial(direction) {
+        testimonialIndex += direction;
+        
+        if (testimonialIndex > maxTestimonialIndex) {
+            testimonialIndex = 0;
+        } else if (testimonialIndex < 0) {
+            testimonialIndex = maxTestimonialIndex;
+        }
+        
+        updateTestimonialSlider();
+    }
+
+    function currentTestimonial(index) {
+        testimonialIndex = index;
+        updateTestimonialSlider();
+    }
+
+    function updateTestimonialSlider() {
+        const track = document.querySelector('.testimonial-slides-track');
+        const slideWidth = testimonialSlides[0].offsetWidth + 30; // 30px is gap
+        track.style.transform = `translateX(-${testimonialIndex * slideWidth * testimonialsToShow}px)`;
+        
+        // Update dots
+        const dots = document.querySelectorAll('.testimonial-dot');
+        dots.forEach((dot, index) => {
+            dot.classList.remove('active');
+            if (index === testimonialIndex) {
+                dot.classList.add('active');
+            }
+        });
+    }

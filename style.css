@@ -936,62 +936,151 @@
             border-width: 1px;
         }
 
-        /* TESTIMONIALS SECTION (Home Page)*/
-        .testimonials {
-            padding: 80px 0;
-        }
+/* TESTIMONIALS SECTION (Home Page)*/
+.testimonials {
+    padding: 80px 0;
+    background: white;
+}
 
-        .testimonials-header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
+.testimonials-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
 
-        .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
+.testimonial-slider-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
 
-        .testimonial-card {
-            background: white;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-        }
+.testimonial-slider-wrapper {
+    overflow: hidden;
+}
 
-        .testimonial-card.featured {
-            background: #1a0b5e;
-            color: white;
-        }
+.testimonial-slides-track {
+    display: flex;
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+}
 
-        .testimonial-author {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
+.testimonial-slide {
+    min-width: calc(33.333% - 20px);
+    flex-shrink: 0;
+}
 
-        .author-avatar {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background: #ddd;
-        }
+.testimonial-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    height: 100%;
+    transition: transform 0.3s;
+}
 
-        .author-info h4 {
-            margin-bottom: 5px;
-        }
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
 
-        .author-info p {
-            font-size: 12px;
-            opacity: 0.8;
-        }
+.testimonial-card.featured {
+    background: #1a0b5e;
+    color: white;
+}
 
-        .stars {
-            color: #ffc107;
-            margin-bottom: 15px;
-        }
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
 
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.author-info h4 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.author-info p {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.stars {
+    color: #ffc107;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.testimonial-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+.testimonial-card.featured p {
+    color: white;
+}
+
+.testimonial-slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 10;
+    transition: all 0.3s;
+}
+
+.testimonial-slider-btn:hover {
+    background: #1a0b5e;
+    color: white;
+}
+
+.testimonial-slider-btn.prev {
+    left: 0;
+}
+
+.testimonial-slider-btn.next {
+    right: 0;
+}
+
+.testimonial-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.testimonial-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.testimonial-dot.active {
+    background: #1a0b5e;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.testimonial-dot:hover {
+    background: #a698e0;
+}
 
         /* Contact Section (Contact Page)*/
         .contact-section {
@@ -1377,6 +1466,21 @@
             max-width: 100%;
         }
       
+        /* Showcase Responsive  */
+        .testimonial-slide {
+            min-width: 100%;
+        }
+        
+        .testimonial-slider-container {
+            padding: 0 40px;
+        }
+        
+        .testimonial-slider-btn {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+        }
+
         /* Showcase Responsive  */
         .slide-item {
             min-width: 100%;
