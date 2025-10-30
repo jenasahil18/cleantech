@@ -145,9 +145,9 @@ function updateSlider() {
 setInterval(() => moveSlide(1), 5000);
 window.addEventListener('resize', updateSlider);
 
-
+//Testimonial slider//
     let testimonialIndex = 0;
-    const testimonialsToShow = 3;
+    const testimonialsToShow = 1;
     const testimonialSlides = document.querySelectorAll('.testimonial-slide');
     const totalTestimonials = testimonialSlides.length;
     const maxTestimonialIndex = Math.ceil(totalTestimonials / testimonialsToShow) - 1;
@@ -172,7 +172,7 @@ window.addEventListener('resize', updateSlider);
     function updateTestimonialSlider() {
         const track = document.querySelector('.testimonial-slides-track');
         const slideWidth = testimonialSlides[0].offsetWidth + 30; // 30px is gap
-        track.style.transform = `translateX(-${testimonialIndex * slideWidth * testimonialsToShow}px)`;
+        track.style.transform = `translateX(-${testimonialIndex * 100}%)`;
         
         // Update dots
         const dots = document.querySelectorAll('.testimonial-dot');
