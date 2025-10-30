@@ -75,7 +75,7 @@
 
         .btn-primary {
             background: #000080;
-            color: white;
+            color: rgb(255, 255, 255);
             padding: 12px 30px;
             border: none;
             border-radius: 25px;
@@ -826,12 +826,12 @@
 
         .services-footer {
             text-align: center;
-            margin-top: 40px;
+            margin-top: 200px;
         }
 
         .book-btn {
             display: inline-block;
-            background-color: #000080; /* navy blue */
+            background-color: #1a0b5e; /* deeper blue */
             color: #fff;
             font-weight: 600;
             font-size: 16px;
@@ -843,7 +843,8 @@
         }
 
         .book-btn:hover {
-            background-color: #1a0b5e; /* deeper blue */
+            background-color: #fff; 
+            color:#1a0b5e;
             box-shadow: 0 8px 20px rgba(26, 11, 94, 0.4);
             transform: translateY(-2px);
         }
